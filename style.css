@@ -1,0 +1,41 @@
+body{
+	font-family: Helvetica;
+	background: #555;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#game > table > tr > td{
+	width: 10vw;
+	height: 10vw;
+	border: .5vw solid #fff;
+	text-align: center;
+}
+#game > table{
+	border-collapse: collapse;
+	border: solid black 1px;
+}
+#game{
+	padding: 2vw;
+	background: #333;
+	display: inline-block;
+}
+.board{
+}
+.red{
+	background: #f00;
+}
+.blue{
+	background: #00f;
+}
+.chip{
+	width: 7vw;
+	height: 7vw;
+	border-radius: 50%;
+	display: inline-block;
+	border: .50vw dashed #fff;
+}
+#chip-select{
+
+}
