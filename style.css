@@ -28,7 +28,7 @@ table{
 	background: #263238;
 	display: inline-block;
 }
-#info{
+.info{
 	background: #455a64;
 	padding: 2vh;
 	text-align: center;
@@ -37,8 +37,15 @@ table{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	color: #fff;
 }
-#info > .chip{
+.info > p{
+	margin: 0;
+}
+.info > .chip{
+}
+#result-board{
+	display: none;
 }
 .board{
 	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
@@ -50,6 +57,7 @@ table{
 	background:  #2196f3;
 }
 .chip{
+	position: relative;
 	width: 7vh;
 	height: 7vh;
 	border-radius: 50%;
@@ -59,11 +67,24 @@ table{
 	border-color: #fff;
 	box-shadow: .1vh .1vh .5vh rgba(0, 0, 0, .5);
 }
-.turn-indicator{
+#turn-indicator{
 	background: rgba(0, 0, 0, .25);
 	color: #cfd8dc;
 	padding: 1vh;
 	font-size: 4vh;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-	width: 3em;
+	width: 12vh;
+	text-align: center;
+}
+.info > .chip.active:after{
+	position: absolute;
+	content: '\25CF';
+	color: white;
+	font-size: 5vh;
+}
+.info > .chip.red.active:after{
+	right: 10vh;
+}
+.info > .chip.blue.active:after{
+	left: 10vh;
 }

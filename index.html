@@ -4,15 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>order and chaos</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="game.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 </head>
 <body>
 	<div  id="game" class="board">
-		<div class="board" id="info">
+		<div class="board info" id="piece-select">
 			<div class="blue chip"></div>
-			<div class="turn-indicator">chaos</div>
+			<div id="turn-indicator"></div>
 			<div class="red chip"></div>
+		</div>
+		<div class="board info" id="result-board">
+			<p>idk?</p>
 		</div>
 		<table>
 			<tr>
